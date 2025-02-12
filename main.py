@@ -55,7 +55,6 @@ if abs(percentage) > 5:
     formatted_message = [f"Headline: {article['title']}.\nBrief: {article['description']}"
                          for article in three_articles]
 
-    ## STEP 3: Use https://www.twilio.com
     for article in formatted_message:  # Contains three messages.
         msg = MIMEMultipart()  # for creating an email message that can have multiple parts.
         msg['From'] = my_email
